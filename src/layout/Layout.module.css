@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3e3e3e;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+header a {
+    text-decoration: none;
+    color: #3a3ead;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #3e3e3e;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
