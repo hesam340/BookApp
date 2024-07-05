@@ -1,10 +1,11 @@
+import Books from "./components/Books";
 import Layout from "./layout/layout";
 
 function App() {
   return (
     <>
       <Layout>
-        <h1>Book App Starting files</h1>
+        <Books />
       </Layout>
     </>
   );

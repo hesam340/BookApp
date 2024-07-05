@@ -1,0 +1,44 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: #3e3e3e;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.card img {
+    width: 70px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+}
+
+.info span {
+    margin-right: 25px;
+    color: #999999;
+    font-weight: 500;
+}
+
+.card button {
+    height: fit-content;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.card button:hover {
+    transform: scale(1.3);
+}
+
