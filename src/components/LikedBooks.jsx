@@ -1,7 +1,10 @@
-function LikedBooks() {
+function LikedBooks({ data: { image, title } }) {
   return (
-    <div>LikedBooks</div>
-  )
+    <div>
+      <img src={image} alt={title} />
+      <p>{title}</p>
+    </div>
+  );
 }
 
-export default LikedBooks
+export default LikedBooks;
