@@ -2,6 +2,7 @@ import { useState } from "react";
 import { books } from "../constants/mockData";
 
 import BookCard from "./BookCard.jsx";
+import LikedBooks from "./LikedBooks.jsx";
 
 function Books() {
   const [likedBooks, setLikedBooks] = useState([]);
@@ -26,7 +27,15 @@ function Books() {
           />
         ))}
       </div>
-      <div></div>
+      <div>
+        {!!likedBooks.length && (
+          <div>
+            {likedBooks.map((i) => (
+              <LikedBooks key={i.id} data={i} />
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
