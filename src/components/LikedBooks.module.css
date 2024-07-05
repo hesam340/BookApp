@@ -1,0 +1,17 @@
+.liked {
+    display: flex;
+    align-items: center;
+    background-color: #6074f7cc;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.liked img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.liked p {
+    margin-left: 15px;
+}

@@ -4,6 +4,8 @@ import { books } from "../constants/mockData";
 import BookCard from "./BookCard.jsx";
 import LikedBooks from "./LikedBooks.jsx";
 
+import styles from "./Books.module.css";
+
 function Books() {
   const [likedBooks, setLikedBooks] = useState([]);
 
@@ -17,8 +19,8 @@ function Books() {
   };
 
   return (
-    <div>
-      <div>
+    <div className={styles.container}>
+      <div className={styles.card}>
         {books.map((book) => (
           <BookCard
             key={book.id}
@@ -27,15 +29,14 @@ function Books() {
           />
         ))}
       </div>
-      <div>
-        {!!likedBooks.length && (
-          <div>
-            {likedBooks.map((i) => (
-              <LikedBooks key={i.id} data={i} />
-            ))}
-          </div>
-        )}
-      </div>
+      {!!likedBooks.length && (
+        <div className={styles.favorite}>
+          <h4>Favorites :</h4>
+          {likedBooks.map((i) => (
+            <LikedBooks key={i.id} data={i} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
